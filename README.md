@@ -2,7 +2,7 @@
 
 Meu nome e Paulo Renato Junco da Silva Braga e resido em Pinhalzinho/SP. Atualmente, estou cursando Ciencia de Dados na UNIVESP (Polo Braganca Paulista), onde estou concluindo o 3o Semestre. Sou adicto pela area de tecnologia e tudo que ela pode nos proporcionar, com o estagio busco desenvolver minhas habilidades nesse segmento.
 
-Link para minha foto: https://github.com/paulorenatojsb/general/blob/main/photo%20eu.jpg
+[Link para minha foto](https://github.com/paulorenatojsb/general/blob/main/photo%20eu.jpg)
 
 Possuo experiencia previa na area de tecnologia, porem sempre relacionado a vendas, relacionamento ou customer success. Hoje sou Coordenador de Customer Success em uma empresa de Tecnologia chamada SmartTravel IT. 
 
@@ -14,6 +14,6 @@ Na Sprint 1 o conteudo que aprendemos e trabalhamos foi instalacao de maquina vi
 
 ## Sprints README
 
-1. [Sprint 1](paulorenatojsb/CompassAcademy/Sprint 01/README.md)
-2. [Sprint 3]
-3. [Sprint 4]
+1. [Sprint 1](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/README.md)
+2. [Sprint 3] - Em breve!
+3. [Sprint 4] - Em breve!
