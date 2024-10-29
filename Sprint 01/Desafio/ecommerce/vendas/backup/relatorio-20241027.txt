@@ -1,0 +1,15 @@
+Data do Sistema: 2024/10/27 15:27
+Data do primeiro registro: 23/07/2023
+Data do último registro: 27/08/2023
+Quantidade total de itens vendidos: 27
+Primeiras 10 linhas do arquivo:
+id,produto,quantidade,preco,data
+1,cachecol,2,192.66,23/07/2023
+2,agenda,3,432.62,17/02/2023
+3,pendrive,9,276.96,15/09/2023
+4,teclado,5,358.33,04/02/2023
+5,régua,4,172.02,08/07/2023
+6,agenda,2,480.13,09/09/2023
+7,jaqueta,4,147.04,16/08/2023
+8,agenda,10,144.47,12/04/2023
+9,meia,8,300.69,15/02/2023

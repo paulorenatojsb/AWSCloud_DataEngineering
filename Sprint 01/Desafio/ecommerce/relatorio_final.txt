@@ -1,0 +1,72 @@
+Data do Sistema: 2024/10/25 15:27
+Data do primeiro registro: 01/01/2023
+Data do último registro: 31/01/2023
+Quantidade total de itens vendidos: 66
+Primeiras 10 linhas do arquivo:
+id,produto,quantidade,preço,data
+1,camiseta,2,29.90,01/01/2023
+2,calça,5,80.00,02/01/2023
+3,sapato,3,100.00,03/01/2023
+4,meia,20,5.00,04/01/2023
+5,cinto,8,15.00,05/01/2023
+6,camisa,7,40.00,06/01/2023
+7,bermuda,6,50.00,07/01/2023
+8,tênis,4,120.00,08/01/2023
+9,bone,12,10.00,09/01/2023
+
+-------------------
+
+Data do Sistema: 2024/10/26 15:27
+Data do primeiro registro: 01/01/2023
+Data do último registro: 31/01/2023
+Quantidade total de itens vendidos: 66
+Primeiras 10 linhas do arquivo:
+id,produto,quantidade,preço,data
+1,camiseta,2,29.90,01/01/2023
+2,calça,5,80.00,02/01/2023
+3,sapato,3,100.00,03/01/2023
+4,meia,20,5.00,04/01/2023
+5,cinto,8,15.00,05/01/2023
+6,camisa,7,40.00,06/01/2023
+7,bermuda,6,50.00,07/01/2023
+8,tênis,4,120.00,08/01/2023
+9,bone,12,10.00,09/01/2023
+
+-------------------
+
+Data do Sistema: 2024/10/27 15:27
+Data do primeiro registro: 23/07/2023
+Data do último registro: 27/08/2023
+Quantidade total de itens vendidos: 27
+Primeiras 10 linhas do arquivo:
+id,produto,quantidade,preco,data
+1,cachecol,2,192.66,23/07/2023
+2,agenda,3,432.62,17/02/2023
+3,pendrive,9,276.96,15/09/2023
+4,teclado,5,358.33,04/02/2023
+5,régua,4,172.02,08/07/2023
+6,agenda,2,480.13,09/09/2023
+7,jaqueta,4,147.04,16/08/2023
+8,agenda,10,144.47,12/04/2023
+9,meia,8,300.69,15/02/2023
+
+-------------------
+
+Data do Sistema: 2024/10/28 15:27
+Data do primeiro registro: 23/11/2022
+Data do último registro: 01/12/2022
+Quantidade total de itens vendidos: 15
+Primeiras 10 linhas do arquivo:
+id,produto,quantidade,preco,data
+1,laranja,3,63.28,23/11/2022
+2,notebook,2,210.04,28/10/2023
+3,caneta,10,390.43,03/11/2023
+4,maçã,9,103.92,29/10/2022
+5,estante,7,492.84,02/01/2023
+6,caneta,5,288.83,07/08/2022
+7,banana,1,401.15,05/03/2023
+8,caneta,5,38.71,10/05/2023
+9,maçã,7,167.6,24/11/2022
+
+-------------------
+
