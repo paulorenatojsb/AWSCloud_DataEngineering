@@ -4,8 +4,6 @@
 
 Este projeto automatiza o processamento e a consolidação de relatórios de vendas, organizando arquivos de backup e consolidando-os em um relatório final. Este documento fornece uma descrição dos passos para configurar, executar e verificar os resultados gerados pelos scripts `processamento_de_vendas.sh` e `consolidador_de_processamento_de_vendas.sh`.
 
-[LINK PARA O VIDEO](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/PauloRenato.Braga-Sprint01.webm)
-
 ## Estrutura do Projeto e Arquivos
 
 ### Estrutura de Diretórios
@@ -15,20 +13,35 @@ O projeto está organizado com os scripts principais na pasta `home`, enquanto o
 ```
 ~/
 ├── processamento_de_vendas.sh                  # Script para processamento de vendas e criação de backups
+
 ├── consolidador_de_processamento_de_vendas.sh  # Script para consolidação dos backups
+
 ├── ecommerce/
+
 │   ├── dados_de_venda.csv                      # Arquivo principal de dados de vendas
+
 │   ├── dados_de_venda20241025.csv              # Arquivos de vendas com data no nome (backup diário)
+
 │   ├── dados_de_venda20241026.csv
+
 │   ├── dados_de_venda20241027.csv
+
 │   ├── relatorio_de_vendas.txt                 # Relatório final consolidado das vendas
+
 │   └── vendas/
+
 │       ├── backup/                             # Diretório com backups diários e relatórios
+
 │       │   ├── relatorio-20241025.txt
+
 │       │   ├── relatorio-20241026.txt
+
 │       │   ├── relatorio-20241027.txt
+
 │       │   ├── relatorio-20241028.txt
+
 │       │   └── relatorio_final.txt             # Arquivo consolidado de todos os relatórios
+
 │       └── backup-dados-*.zip                  # Arquivos zip com backup de dados diários
 ```
 
