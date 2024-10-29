@@ -1,5 +1,7 @@
 # README DESAFIO SPRINT 1 - Processamento de Vendas
 
+[LINK PARA O VIDEO DO DESAFIO](https://compasso-my.sharepoint.com/personal/paulo_braga_pb_compasso_com_br/_layouts/15/stream.aspx?id=%2Fpersonal%2Fpaulo%5Fbraga%5Fpb%5Fcompasso%5Fcom%5Fbr%2FDocuments%2FPauloRenato%2EBraga%2DSprint01%2Ewebm&nav=%7B%22defaultNavPanel%22%3A%7B%22pluginName%22%3A%22MediaSettingsLayer%22%7D%7D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebd30914d%2D8f79%2D4c62%2D8114%2Dde587291f97b)
+
 ```markdown
 
 Este projeto automatiza o processamento e a consolidação de relatórios de vendas, organizando arquivos de backup e consolidando-os em um relatório final. Este documento fornece uma descrição dos passos para configurar, executar e verificar os resultados gerados pelos scripts `processamento_de_vendas.sh` e `consolidador_de_processamento_de_vendas.sh`.
