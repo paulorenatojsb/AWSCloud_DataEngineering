@@ -4,6 +4,8 @@
 
 Este projeto automatiza o processamento e a consolidação de relatórios de vendas, organizando arquivos de backup e consolidando-os em um relatório final. Este documento fornece uma descrição dos passos para configurar, executar e verificar os resultados gerados pelos scripts `processamento_de_vendas.sh` e `consolidador_de_processamento_de_vendas.sh`.
 
+[LINK PARA O VIDEO DO DESAFIO]()
+
 ## Estrutura do Projeto e Arquivos
 
 ### Estrutura de Diretórios
