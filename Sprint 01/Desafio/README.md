@@ -58,10 +58,17 @@ Para gerar arquivos de backup e relatórios, execute:
 ```bash
 ~/processamento_de_vendas.sh
 ```
+[Evidencia 1](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(1).png)
+
+[Evidencia 3](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(3).png)
+
+[Evidencia 4](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(4).png)
 
 Esse comando realiza as seguintes ações:
 1. Cria um backup de `dados_de_venda.csv` em `ecommerce/` com a data no nome.
 2. Gera um relatório diário `relatorio-<data>.txt` no diretório `backup`.
+
+[Evidencia 6](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(6).png)
 
 ### Passo 3: Agendar Execução Automática com Cron
 
@@ -81,6 +88,7 @@ Para consolidar os arquivos de relatórios, execute:
 ```bash
 ~/consolidador_de_processamento_de_vendas.sh
 ```
+[Evidencia 2](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(2).png)
 
 Esse comando:
 1. Percorre todos os arquivos `relatorio-*.txt` em `backup/`.
@@ -100,6 +108,10 @@ Esse comando:
     2,notebook,1,2500.00,20/06/2023
     ```
 
+[Evidencia 5](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(5).png)
+
+[Evidencia 7](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(7).png)
+
 - **Exemplo de `relatorio_final.txt`**:
     ```
     Data do Sistema: 2024/10/27 15:27
@@ -109,8 +121,4 @@ Esse comando:
     -------------------
     [conteúdo do próximo relatório]
     ```
-
-## Observações
-
-- Verifique as permissões de leitura e escrita no diretório `backup/` para garantir o funcionamento dos scripts.
-- Em caso de problemas na execução, valide permissões e o agendamento no `crontab`.
+[Evidencia 8](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/Evid%C3%AAncias/Evidencia%20Desafio%20Sprint1%20(8).png)
