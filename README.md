@@ -10,7 +10,8 @@ Em meu tempo livre, gosto de estar com minha familia - minha esposa e filho - e 
 
 Estou muito feliz por fazer parte deste programa e espero contribuir e aprender muito com a equipe e os colegas monitores.
 
-Na Sprint 1 o conteudo que aprendemos e trabalhamos foi instalacao de maquina virtul, Linux, Script, Terminal de Comando no Linux, Git e Github. Na medida em que avanco no programa de bolsas, continuarei atualizando esta secao com novos conteudos e experiencias que construirem minha trajetoria no campo da tecnologia.
+Na Sprint 1 o conteudo que aprendemos e trabalhamos foi instalacao de maquina virtul, Linux, Script, Terminal de Comando no Linux, Git e Github. Já na Sprint 2, o tema foi SQL e iniciamos a certificação AWS (modulo: Sales Accreditation).
+Na medida em que avanco no programa de bolsas, continuarei atualizando esta secao com novos conteudos e experiencias que construirem minha trajetoria no campo da tecnologia.
 
 ## Sprints README
 
