@@ -1,4 +1,4 @@
-CREATE TABLE `Cliente` (
+CREATE TABLE `DimCliente` (
   `idCliente` INT PRIMARY KEY,
   `nomeCliente` VARCHAR,
   `cidadeCliente` VARCHAR,
@@ -6,7 +6,7 @@ CREATE TABLE `Cliente` (
   `paisCliente` VARCHAR
 );
 
-CREATE TABLE `Carro` (
+CREATE TABLE `DimCarro` (
   `idCarro` INT PRIMARY KEY,
   `kmCarro` INT,
   `chassiCarro` VARCHAR,
@@ -15,23 +15,17 @@ CREATE TABLE `Carro` (
   `anoCarro` INT
 );
 
-CREATE TABLE `Combustivel` (
-  `idCombustivel` INT PRIMARY KEY,
-  `tipoCombustivel` VARCHAR
-);
-
-CREATE TABLE `Vendedor` (
+CREATE TABLE `DimVendedor` (
   `idVendedor` INT PRIMARY KEY,
   `nomeVendedor` VARCHAR,
   `sexoVendedor` SMALLINT,
   `estadoVendedor` VARCHAR
 );
 
-CREATE TABLE `Locacao` (
+CREATE TABLE `FatoLocacao` (
   `idLocacao` INT PRIMARY KEY,
   `idCliente` INT,
   `idCarro` INT,
-  `idCombustivel` INT,
   `idVendedor` INT,
   `dataLocacao` DATETIME,
   `horaLocacao` TIME,
@@ -41,10 +35,8 @@ CREATE TABLE `Locacao` (
   `horaEntrega` TIME
 );
 
-ALTER TABLE `Locacao` ADD FOREIGN KEY (`idCliente`) REFERENCES `Cliente` (`idCliente`);
+ALTER TABLE `FatoLocacao` ADD FOREIGN KEY (`idCliente`) REFERENCES `DimCliente` (`idCliente`);
 
-ALTER TABLE `Locacao` ADD FOREIGN KEY (`idCarro`) REFERENCES `Carro` (`idCarro`);
+ALTER TABLE `FatoLocacao` ADD FOREIGN KEY (`idCarro`) REFERENCES `DimCarro` (`idCarro`);
 
-ALTER TABLE `Locacao` ADD FOREIGN KEY (`idCombustivel`) REFERENCES `Combustivel` (`idCombustivel`);
-
-ALTER TABLE `Locacao` ADD FOREIGN KEY (`idVendedor`) REFERENCES `Vendedor` (`idVendedor`);
+ALTER TABLE `FatoLocacao` ADD FOREIGN KEY (`idVendedor`) REFERENCES `DimVendedor` (`idVendedor`);
