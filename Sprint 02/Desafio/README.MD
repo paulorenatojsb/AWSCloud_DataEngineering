@@ -61,9 +61,12 @@ A Query da normalização está disponivel em [Desafio_normalização.sql](https
 - **Vendedor**: Informações do vendedor (`idVendedor`, `nomeVendedor`, `sexoVendedor`, `estadoVendedor`).
 - **Locacao**: Informações específicas da locação (`idLocacao`, `idCliente`, `idCarro`, `idCombustivel`, `idVendedor`, `dataLocacao`, `horaLocacao`, `qtdDiaria`, `vlrDiaria`, `dataEntrega`, `horaEntrega`).
 
-[Evidencia da Normalização]()
+![Evidencia da Normalização](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Evid%C3%AAncias/Evidencia%20Desafio%20Final%201.png)
 
 ### 3. Script para o Modelo Relacional:
+
+Criação do Modelo Relacional
+![Criação do Modelo Relacional](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Evid%C3%AAncias/Evidencia%20Desafio%20Final%203.png)
 
 O script [`Modelo Relacional.sql`](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Desafio/DESAFIO%20-%20Se%C3%A7%C3%A3o%208/Modelo%20Relacional.sql) contém as instruções SQL para criar o Diagrama Relacional, com suas respectivas chaves primárias e estrangeiras, garantindo a integridade dos dados.
 
@@ -87,6 +90,9 @@ Após a normalização, criei um **modelo dimensional** baseado no modelo relaci
    - **DimVendedor**: Contém dados sobre os vendedores.
 
 #### Script para o Modelo Dimensional:
+
+Criação do Modelo Dimensional
+![Criação do Modelo Dimensional](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Evid%C3%AAncias/Evidencia%20Desafio%20Final%202.png)
 
 O script [`Modelo Dimensional.sql`](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Desafio/DESAFIO%20-%20Se%C3%A7%C3%A3o%208/Modelo%20Relacional.sql) inclui as instruções SQL para criar a tabela fato e as tabelas de dimensão, com relacionamentos estabelecidos para permitir análises de métricas por cliente, carro, tipo de combustível e vendedor.
 
