@@ -61,6 +61,8 @@ A Query da normalização está disponivel em [Desafio_normalização.sql](https
 - **Vendedor**: Informações do vendedor (`idVendedor`, `nomeVendedor`, `sexoVendedor`, `estadoVendedor`).
 - **Locacao**: Informações específicas da locação (`idLocacao`, `idCliente`, `idCarro`, `idCombustivel`, `idVendedor`, `dataLocacao`, `horaLocacao`, `qtdDiaria`, `vlrDiaria`, `dataEntrega`, `horaEntrega`).
 
+[Evidencia da Normalização]()
+
 ### 3. Script para o Modelo Relacional:
 
 O script [`Modelo Relacional.sql`](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Desafio/DESAFIO%20-%20Se%C3%A7%C3%A3o%208/Modelo%20Relacional.sql) contém as instruções SQL para criar o Diagrama Relacional, com suas respectivas chaves primárias e estrangeiras, garantindo a integridade dos dados.

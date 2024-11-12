@@ -1,24 +1,17 @@
 ----- EXERCICIO 1 SEÇÃO 3
 
 SELECT 
-    LIVRO.cod,
-    LIVRO.titulo,
-    AUTOR.nome AS autor,
-    EDITORA.nome AS editora,
-    LIVRO.valor,
-    LIVRO.publicacao,
-    LIVRO.edicao,
-    LIVRO.idioma
-FROM 
-    LIVRO
-JOIN 
-    AUTOR ON LIVRO.autor = AUTOR.codAutor
-JOIN 
-    EDITORA ON LIVRO.editora = EDITORA.codEditora
-WHERE 
-    LIVRO.publicacao > '2014-12-31'
-ORDER BY 
-    LIVRO.cod ASC;
+    cod,
+    titulo,
+    autor,
+    editora,
+    valor,
+    publicacao,
+    edicao,
+    idioma
+FROM LIVRO
+WHERE publicacao > '2014-12-31'
+ORDER BY cod ASC;
     
 ----- EXERCICIO 2 SEÇÃO 3
    
