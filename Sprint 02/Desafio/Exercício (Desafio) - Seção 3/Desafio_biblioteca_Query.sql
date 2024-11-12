@@ -104,7 +104,3 @@ WHERE
     livro.cod IS NULL
 ORDER BY 
     autor.nome ASC;
-
------ EXERCICIO 8 SEÇÃO 3
-
-
