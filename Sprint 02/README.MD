@@ -33,11 +33,11 @@ Os exercícios foram realizados em dois bancos de dados fornecidos durante a spr
 3. **Banco de Dados Concessionaria**: Com dados sobre locações de veículos, clientes, carros, combustíveis e vendedores, esse banco de dados foi usado para exercícios de modelagem relacional e dimensional, além de consultas avançadas para calcular comissões, listar produtos menos vendidos e calcular o gasto médio por estado. [Pasta do Desafio](https://github.com/paulorenatojsb/CompassAcademy/tree/main/Sprint%2002/Desafio/DESAFIO%20-%20Se%C3%A7%C3%A3o%208)
 
     3.1 **Passos Realizados no Desafio da Sprint**
-1. Exploração e Normalização do Banco de Dados Concessionaria:
+- Exploração e Normalização do Banco de Dados Concessionaria:
    - Analise da tabela `tb_locacao` original, aplicando normalização para criar o modelo relacional;
    - Definição das chaves primárias e estrangeiras para garantir integridade referencial;
    - Criação do diagrama `Modelo Relacional.png` para visualizar as relações;
-2. Construção do Modelo Dimensional:
+- Construção do Modelo Dimensional:
    - Criação do star schema com `FatoLocacao` e as dimensões (`DimCliente`, `DimCarro`, `DimVendedor`).
    - Documentamos o modelo no diagrama `Modelo Dimensional.png`.
 
@@ -59,7 +59,7 @@ Além dos estudos em SQL, foi concluída a primeira unidade da certificação **
 
 ![Badge](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Certificados/Badge%20-%20AWS%20Partner%20-%20Sales%20Accreditation.png)
 
-![Certificado de Conclusão AWS Partner: Sales Accreditation](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Certificados/AWS%20Certificate_Sales%20Accreditation_Paulo%20Renato%20Braga.pdf)
+[Certificado de Conclusão AWS Partner: Sales Accreditation](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/Certificados/AWS%20Certificate_Sales%20Accreditation_Paulo%20Renato%20Braga.pdf)
 
 ## Conclusão
 
