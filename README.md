@@ -12,8 +12,13 @@ Estou muito feliz por fazer parte deste programa e espero contribuir e aprender 
 
 ## Sprints README
 
-1. [Sprint 1](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/README.md)
-2. [Sprint 2](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/README.MD)
-3. [Sprint 3](./Sprint%2003/README.md)
-3. [Sprint 4] - Em breve!
-3. [Sprint 5] - Em breve!
+1. [Sprint 1](./Sprint%2001/README.md) - **Linux e Shell Script**
+2. [Sprint 2](./Sprint%2002/README.MD) - **SQL**
+3. [Sprint 3](./Sprint%2003/README.md) - **Python**
+4. [Sprint 4] - Em breve!
+5. [Sprint 5] - Em breve!
+6. [Sprint 6] - Em breve!
+7. [Sprint 7] - Em breve!
+8. [Sprint 8] - Em breve!
+9. [Sprint 9] - Em breve!
+10. [Sprint 10] - Em breve!
