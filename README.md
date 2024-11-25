@@ -2,7 +2,7 @@
 
 Meu nome e Paulo Renato Junco da Silva Braga e resido em Pinhalzinho/SP. Atualmente, estou cursando Ciencia de Dados na UNIVESP (Polo Braganca Paulista), onde estou concluindo o 3o Semestre. Sou adicto pela area de tecnologia e tudo que ela pode nos proporcionar, com o estagio busco desenvolver minhas habilidades nesse segmento.
 
-![Minha Foto](../CompassAcademy/Sprint%2001/Evidências/photo_eu.jpg)
+![Minha Foto](https://github.com/paulorenatojsb/general/blob/main/photo_eu.jpg)
 
 Possuo experiencia previa na area de tecnologia, porem sempre relacionado a vendas, relacionamento ou customer success. Hoje sou Coordenador de Customer Success em uma empresa de Tecnologia chamada SmartTravel IT. 
 
