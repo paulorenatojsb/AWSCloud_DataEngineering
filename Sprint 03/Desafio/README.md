@@ -37,11 +37,9 @@ No desafio precisei processar um arquivo .CSV contendo dados de aplicativos da G
 2. **Gráfico de Pizza - Distribuição por Categoria**:
    - Para o gráfico pizza, realizei 2 versões diferentes, pois sem agrupar as categorias com menor % (< 2.3%>) parte do gráfico ficava ilegível. Por isso, fiz uma segunda visualização, com a criação do "Outros".
 
-Versão 1
-![Evidencia 4](../Evidências/Evidencias%20Desafio%20-%20Sprint%203%20(3).png)
+Versão 1 ![Evidencia 4](../Evidências/Evidencias%20Desafio%20-%20Sprint%203%20(3).png)
 
-Versão 1
-![Evidencia 5](../Evidências/Evidencias%20Desafio%20-%20Sprint%203%20(4).png)
+Versão 2 ![Evidencia 5](../Evidências/Evidencias%20Desafio%20-%20Sprint%203%20(4).png)
 
 #### 3.2. Cálculos e Insights
 1. **App Mais Caro**:
