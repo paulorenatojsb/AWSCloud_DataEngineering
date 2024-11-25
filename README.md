@@ -10,13 +10,10 @@ Em meu tempo livre, gosto de estar com minha familia - minha esposa e filho - e 
 
 Estou muito feliz por fazer parte deste programa e espero contribuir e aprender muito com a equipe e os colegas monitores.
 
-Na Sprint 1 o conteudo que aprendemos e trabalhamos foi instalacao de maquina virtul, Linux, Script, Terminal de Comando no Linux, Git e Github. Já na Sprint 2, o tema foi SQL e iniciamos a certificação AWS (módulo: Sales Accreditation).
-Na medida em que avanco no programa de bolsas, continuarei atualizando esta secao com novos conteudos e experiencias que construirem minha trajetoria no campo da tecnologia.
-
 ## Sprints README
 
 1. [Sprint 1](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/README.md)
 2. [Sprint 2](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/README.MD)
-3. [Sprint 3] ()
+3. [Sprint 3] (Sprint 03\README.md)
 3. [Sprint 4] - Em breve!
 3. [Sprint 5] - Em breve!
