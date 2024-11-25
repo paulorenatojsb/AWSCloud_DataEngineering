@@ -15,6 +15,7 @@ Foram abordados conceitos teóricos sobre os benefícios econômicos da computa�
 - Modelos de pagamento por uso e suas vantagens.
 
 Compartilho meu Badge conquistado pela conclusão do módulo de forma satisfatória:
+
 ![Badge AWS](../Sprint%2003/Cerificados/Badge%20-%20AWS%20Partner%20-%20Cloud%20Economic%20Essentials.png)
 
 O Certificado de conclusão está disponível no [Neste LINK](../Sprint%2003/Cerificados/AWS%20Certificate_Cloud%20Economics_Paulo%20Renato%20Braga.pdf).
@@ -80,7 +81,7 @@ Implementação de um projeto baseado nos fundamentos de **ETL (Extract-Transfor
 #### **2.3. Desafio**
 O desafio final consistiu em um projeto mais avançado utilizando as bibliotecas **Pandas** e **Matplotlib** para análise de dados e visualização gráfica.
 
-Abaixo segue apenas um RESUMO do que foi realizado, pois o passo a passo completo está disponível no [README do Desafio](../Sprint%2003/Desafio/README.md), e os arquivos relacionados estã o na pasta [Desafio](../Sprint%2003/Desafio/).
+Abaixo segue apenas um RESUMO do que foi realizado, pois o passo a passo completo está disponível no [README do Desafio](../Sprint%2003/Desafio/README.md), e os arquivos relacionados estão na pasta [Desafio](../Sprint%2003/Desafio/).
 
 **Objetivo**: Processar o arquivo `googleplaystore.csv` e gerar insights com gráficos e cálculos.
 **Etapas Realizadas**:
