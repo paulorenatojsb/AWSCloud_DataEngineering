@@ -14,7 +14,7 @@ No desafio precisei processar um arquivo .CSV contendo dados de aplicativos da G
 1. O arquivo `googleplaystore.csv` foi baixado e armazenado na máquina local.
 2. O ambiente foi configurado no Jupyter Notebook, com as bibliotecas `pandas` e `matplotlib` instaladas.
 
-![Evidencia 1] (Sprint 03\Evidências\Evidencia Desafio Sprint 3-v2.png)
+![Evidencia 1](../Evidências/Evidencia%20Desafio%20Sprint%203-v2.png)
 
 ### 2. Limpeza e Preparação dos Dados
 1. **Remoção de Linhas Duplicadas**:

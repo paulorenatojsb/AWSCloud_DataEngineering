@@ -14,6 +14,6 @@ Estou muito feliz por fazer parte deste programa e espero contribuir e aprender 
 
 1. [Sprint 1](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/README.md)
 2. [Sprint 2](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/README.MD)
-3. [Sprint 3] (Sprint 03\README.md)
+3. [Sprint 3](./Sprint%2003/README.md)
 3. [Sprint 4] - Em breve!
 3. [Sprint 5] - Em breve!
