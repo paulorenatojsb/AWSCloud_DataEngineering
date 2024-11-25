@@ -31,12 +31,13 @@ Principais conceitos:
 - Operações básicas e manipulação de strings.
 
 ![ex1](../Sprint%2003/Evidências/Exercício%20de%20programação%201%20Exercícios%20Parte%201.png)
-![ex2](../Sprint%2003/Evidências/Exercício%20de%20programação%202%20Exercícios%20Parte%201.png)
 ![ex3](../Sprint%2003/Evidências/Exercício%20de%20programação%205%20Exercícios%20Parte%201.png)
+![ex12](../Sprint%2003/Evidências/Exercício%20de%20programação%202%20Exercícios%20Parte%201.png)
 
 - Estruturas de decisão e repetição.
 
 ![ex4](../Sprint%2003/Evidências/Exercício%20de%20programação%208%20Exercícios%20Parte%202.png)
+![ex2](../Sprint%2003/Evidências/Exercício%20de%20programação%202%20Exercícios%20Parte%201.png)
 
 - Funções e manipulação de listas, dicionários e arquivos.
 
@@ -49,7 +50,7 @@ Principais conceitos:
 ![ex8](../Sprint%2003/Evidências/Exercício%20de%20programação%2015%20Exercícios%20Parte%202.png)
 ![ex9](../Sprint%2003/Evidências/Exercício%20de%20programação%2014%20Exercícios%20Parte%202.png)
 ![ex10](../Sprint%2003/Evidências/Exercício%20de%20programação%206%20Exercícios%20Parte%202.png)
-![ex4](../Sprint%2003/Evidências/Exercício%20de%20programação%2022%20Exercícios%20Parte%201.png)
+![ex11](../Sprint%2003/Evidências/Exercício%20de%20programação%2022%20Exercícios%20Parte%201.png)
 
 ---
 
