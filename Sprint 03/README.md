@@ -93,4 +93,4 @@ Abaixo segue apenas um RESUMO do que foi realizado, pois o passo a passo complet
 ---
 
 ## Considerações Finais
-A Sprint 3 foi essencial para fortalecer as habilidades em Python e introduzir conceitos econômicos da AWS Cloud. O progresso foi acompanhado por exercícios práticos, um desafio de ETL e um projeto analítico avançado. Todos os entregáveis foram documentados e organizados em seus respectivos formatos.
+A Sprint 3 foi essencial para fortalecer as habilidades em Python e introduzir conceitos econômicos da AWS Cloud. O progresso foi acompanhado por exercícios práticos, um desafio de ETL e um projeto analítico avançado. Todos os entregáveis foram documentados e organizados em seus respectivos formatos. :)
