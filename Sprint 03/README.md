@@ -32,7 +32,7 @@ Principais conceitos:
 
 ![ex1](../Sprint%2003/Evidências/Exercício%20de%20programação%201%20Exercícios%20Parte%201.png)
 ![ex3](../Sprint%2003/Evidências/Exercício%20de%20programação%205%20Exercícios%20Parte%201.png)
-![ex12](../Sprint%2003/Evidências/Exercício%20de%20programação%202%20Exercícios%20Parte%201.png)
+![ex12](../Sprint%2003/Evidências/Exercício%20de%20programação%203%20Exercícios%20Parte%201.png)
 
 - Estruturas de decisão e repetição.
 
