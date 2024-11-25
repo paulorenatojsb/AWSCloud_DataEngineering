@@ -17,6 +17,6 @@ Na medida em que avanco no programa de bolsas, continuarei atualizando esta seca
 
 1. [Sprint 1](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2001/README.md)
 2. [Sprint 2](https://github.com/paulorenatojsb/CompassAcademy/blob/main/Sprint%2002/README.MD)
-3. [Sprint 3] - Em breve!
+3. [Sprint 3] ()
 3. [Sprint 4] - Em breve!
 3. [Sprint 5] - Em breve!
