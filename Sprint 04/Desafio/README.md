@@ -15,7 +15,7 @@ O desafio está dividido em 3 etapas principais.
 ### **Objetivo**
 Criar uma imagem Docker que execute o script **carguru.py**.
 
-### 📘 **Conteúdo do Dockerfile**
+### **Conteúdo do Dockerfile**
 ```dockerfile
 # Usando a imagem base do Python no Docker
 FROM python:3.9
@@ -31,7 +31,7 @@ CMD ["python", "carguru.py"]
 ```
 ![Evidencia2](../Evidências/Desafio/Sprint%204%20-%20Desafio%20Evidencias%20(3).png)
 
-### 📘 **Conteúdo do carguru.py**
+### **Conteúdo do carguru.py**
 ```python
 import random
 
@@ -44,7 +44,7 @@ print('Você deve dirigir um ' + random_carros)
 
 ---
 
-### 🛠️ **Comandos para execução**
+### **Comandos para execução**
 
 1. **Construir a imagem Docker:**
    ```bash
@@ -60,15 +60,17 @@ print('Você deve dirigir um ' + random_carros)
 
 ---
 
-## 🚀 **Etapa 2 - Reutilizar contêineres**
+## **Etapa 2 - Reutilizar contêineres**
 
-### ❓ **Pergunta**
+### **Pergunta**
 É possível reutilizar contêineres?
 
-### ✅ **Resposta**
+### **Resposta**
 Sim, é possível reutilizar contêineres. 
+- Contêineres Docker não são destruídos automaticamente ao serem parados, a menos que você adicione a flag `--rm` no comando `docker run`.
+- Se o contêiner for reutilizado, ele mantém o estado em que parou.
 
-### 🛠️ **Comandos para reutilizar um contêiner**
+### **Comandos para reutilizar um contêiner**
 
 1. **Verificar quais contêineres estão parados**:
    ```bash
@@ -79,6 +81,7 @@ Sim, é possível reutilizar contêineres.
    ```bash
    docker start <container_id>
    ```
+Usar o comando `docker start` permite que ele retome do estado anterior.
 
 3. **Acessar o terminal do contêiner**:
    ```bash
@@ -86,35 +89,31 @@ Sim, é possível reutilizar contêineres.
    ```
 ![Evidencia3](../Evidências/Desafio/Sprint4-Desafio%20(4).png)
 
-4. **Justificativa**
-- Contêineres Docker não são destruídos automaticamente ao serem parados, a menos que você adicione a flag `--rm` no comando `docker run`.
-- Se o contêiner for reutilizado, ele mantém o estado em que parou.
-
 ---
 
-## 🚀 **Etapa 3 - Criar o contêiner `mascarar-dados`**
+## **Etapa 3 - Criar o contêiner `mascarar-dados`**
 
-### 📝 **Objetivo**
+### **Objetivo**
 Criar um contêiner interativo que permita ao usuário inserir palavras e gerar o **hash SHA-1** dessas palavras.
 
-### 📘 **Conteúdo do Dockerfile**
+### **Conteúdo do Dockerfile**
 ```dockerfile
 # Usar uma imagem base de Python
 FROM python:3.9-slim
 
 # Copiar o script para o contêiner
-COPY mascarar_dados.py /app/mascarar_dados.py
+COPY mascarar-dados.py /app/mascarar-dados.py
 
 # Definir o diretório de trabalho
 WORKDIR /app
 
 # Comando padrão para executar o script
-CMD ["python", "mascarar_dados.py"]
+CMD ["python", "mascarar-dados.py"]
 ```
 
 ![Evidencia4](../Evidências/Desafio/Sprint%204%20-%20Desafio%20Evidencias%20(4).png)
 
-### 📘 **Conteúdo do mascarar_dados.py**
+### **Conteúdo do mascarar-dados.py**
 ```python
 import hashlib
 
@@ -131,7 +130,7 @@ while True:
 
 ---
 
-### 🛠️ **Comandos para execução**
+### **Comandos para execução**
 
 1. **Construir a imagem Docker**:
    ```bash
@@ -143,21 +142,10 @@ while True:
    docker run -it mascarar-dados
    ```
 
-3. **Interação no contêiner**:
-   ```
-   Digite uma string para mascarar (ou 'sair' para encerrar): Duster
-   Hash SHA-1: a53f2fdb583f8e7f9d660334b9e2f3f1c1655df6
-
-   Digite uma string para mascarar (ou 'sair' para encerrar): mudar@123
-   Hash SHA-1: f43c6d2c7d5bc7c060cc6c83641b1d2f80a8bb9b
-
-   Digite uma string para mascarar (ou 'sair' para encerrar): sair
-   Encerrando...
-   ```
 ![Evidencia6](../Evidências/Desafio/Sprint4-Desafio%20(3).png)
 ---
 
-## 🛠️ **Comandos úteis para Docker**
+## **Comandos úteis para Docker**
 
 | **Comando**                    | **Descrição**                                      |
 |-------------------------------|---------------------------------------------------|
@@ -169,18 +157,3 @@ while True:
 | `docker rm <container_id>`     | Remove um contêiner parado                         |
 | `docker images`                | Lista todas as imagens Docker no sistema          |
 | `docker rmi <image_id>`        | Remove uma imagem Docker                           |
-
----
-
-## 📋 **Resolução dos questionamentos**
-### **Etapa 2: Reutilização de contêineres**
-- **É possível reutilizar contêineres?**
-  ✅ Sim.
-
-- **Comando para reutilizar um contêiner:**
-  ```bash
-  docker start <container_id>
-  ```
-
-- **Justificativa**:
-  O contêiner Docker pode ser reutilizado desde que ele não seja removido. Usar o comando `docker start` permite que ele retome do estado anterior.
