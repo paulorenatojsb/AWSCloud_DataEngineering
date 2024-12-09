@@ -15,7 +15,7 @@ Estou muito feliz por fazer parte deste programa e espero contribuir e aprender 
 1. [Sprint 1](./Sprint%2001/README.md) - **Linux e Shell Script**
 2. [Sprint 2](./Sprint%2002/README.MD) - **SQL**
 3. [Sprint 3](./Sprint%2003/README.md) - **Python**
-4. [Sprint 4] - Em breve!
+4. [Sprint 4](./Sprint%2004/README.md) - **Docker**
 5. [Sprint 5] - Em breve!
 6. [Sprint 6] - Em breve!
 7. [Sprint 7] - Em breve!
