@@ -61,12 +61,12 @@ Os exercícios foram focados em **alta ordem de funções** e manipulação de d
   - Certificação adquirida em 09/12/2024, cobrindo os fundamentos dos serviços AWS.
   - Tópicos incluíram **IAM**, **EC2**, **S3**, e fundamentos de segurança na nuvem.
 
-![Evidencia9](../Sprint%2004/Cerificados/AWS%20Certificate_AWS%20Technical%20Essentials_Paulo%20Renato%20Braga.pdf)
+[Certificado AWS Technical Essentials](../Sprint%2004/Cerificados/AWS%20Certificate_AWS%20Technical%20Essentials_Paulo%20Renato%20Braga.pdf)
 
 - **AWS Partner: Credenciamento Técnico**:
   - Certificação voltada para o entendimento das ferramentas AWS e como integrá-las em soluções empresariais.
 
-![Evidencia8](../Sprint%2004/Cerificados/AWS%20Certificate_AWS%20Partner%20Credenciamento%20(Técnico)_Paulo%20Renato%20Braga.pdf)
+[Certificado AWS Credenciamento Técnico](../Sprint%2004/Cerificados/AWS%20Certificate_AWS%20Partner%20Credenciamento%20(Técnico)_Paulo%20Renato%20Braga.pdf)
 
 ---
 
