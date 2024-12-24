@@ -1,159 +1,112 @@
-# Desafio da Sprint 4 - Containers Docker com Python
+# Sprint 05 - Desafio AWS S3 + Script Python
 
-## **Objetivo**
-O objetivo deste desafio foi praticar os principais conceitos de Docker **Docker** e a continuação dos conceitos de **Python**. Nele eu aprendi a criar imagens no Docker, executar contêineres e automatizar a execução de scripts Python.
+## Objetivo
 
----
-
-## **Desafio**
-O desafio está dividido em 3 etapas principais.
+O objetivo deste desafio foi praticar conhecimentos de nuvem AWS aprendidos durante a sprint, com foco em manipulação de arquivos no serviço S3 e análise de dados utilizando Python.
 
 ---
 
-## **Etapa 1 - Criar uma imagem para o `carguru.py`**
+## Preparação
 
-### **Objetivo**
-Criar uma imagem Docker que execute o script **carguru.py**.
+Para que o desafio pudesse ser bem executado, foi configurado AWS CLI com `aws configure` via Power Shell, além da instalação das bibliotecas `boto3` e `pandas`.
 
-### **Conteúdo do Dockerfile**
-```dockerfile
-# Usando a imagem base do Python no Docker
-FROM python:3.9
+- As Credenciais (`aws_access_key_id`, `aws_secret_access_key`, `aws_session_token`) foram adicionadas para autenticação no arquivo `credentials` localizado em `C:\Users\Administrador\.aws`.
 
-# Copiando o arquivo carguru.py para o contêiner
-COPY carguru.py /app/carguru.py
+---
 
-# Definindo o diretório de trabalho
-WORKDIR /app
+### 1. Manipulação de Arquivos no S3
 
-# Comando padrão para executar o script
-CMD ["python", "carguru.py"]
-```
-![Evidencia2](../Evidências/Desafio/Sprint%204%20-%20Desafio%20Evidencias%20(3).png)
+#### **1.1. Criação do Bucket**
 
-### **Conteúdo do carguru.py**
+Realizei a criação do Bucket diretamente via console AWS.
+
+- Nome do bucket: `desafio-compass`.
+- Região: `us-east-1`.
+
+![Evidencia1](../Evidências/Desafio/Evidencia%20Desafio%20SP5%20(2).png)
+
+#### **1.2. Upload do Arquivo Original**
+
+- Arquivo enviado: `chegadas_2023.csv`.
+- Ferramenta: Script Python utilizando `boto3`.
+
+![Evidencia2](../Evidências/Desafio/Evidencia%20Desafio%20SP5.png)
+
+#### **1.3. Download do Arquivo**
+
+- O arquivo foi baixado do bucket S3 para o ambiente local para processamento.
+
 ```python
-import random
-
-carros = ['Chevrolet Onix', 'Chevrolet Celta', 'Fiat Uno', 'Fiat Argo', 'Ford Ka', 'Ford Fiesta', 'Volkswagen Gol', 'Volkswagen Voyage']
-random_carros = random.choice(carros)
-
-print('Você deve dirigir um ' + random_carros)
-```
-![Evidencia1](../Evidências/Desafio/Sprint%204%20-%20Desafio%20Evidencias%20(1).png)
-
----
-
-### **Comandos para execução**
-
-1. **Construir a imagem Docker:**
-   ```bash
-   docker build -t carguru-image -f Dockerfile .
-   ```
-
-2. **Executar o contêiner:**
-   ```bash
-   docker run carguru-image
-   ```
-
-![Evidencia7](../Evidências/Desafio/Sprint4-Desafio%20(1).png)
-
----
-
-## **Etapa 2 - Reutilizar contêineres**
-
-### **Pergunta**
-É possível reutilizar contêineres?
-
-### **Resposta**
-Sim, é possível reutilizar contêineres. 
-- Contêineres Docker não são destruídos automaticamente ao serem parados, a menos que você adicione a flag `--rm` no comando `docker run`.
-- Se o contêiner for reutilizado, ele mantém o estado em que parou.
-
-### **Comandos para reutilizar um contêiner**
-
-1. **Verificar quais contêineres estão parados**:
-   ```bash
-   docker ps -a
-   ```
-
-2. **Iniciar um contêiner parado**:
-   ```bash
-   docker start <container_id>
-   ```
-Usar o comando `docker start` permite que ele retome do estado anterior.
-
-3. **Acessar o terminal do contêiner**:
-   ```bash
-   docker attach <container_id>
-   ```
-![Evidencia3](../Evidências/Desafio/Sprint4-Desafio%20(4).png)
-
----
-
-## **Etapa 3 - Criar o contêiner `mascarar-dados`**
-
-### **Objetivo**
-Criar um contêiner interativo que permita ao usuário inserir palavras e gerar o **hash SHA-1** dessas palavras.
-
-### **Conteúdo do Dockerfile**
-```dockerfile
-# Usar uma imagem base de Python
-FROM python:3.9-slim
-
-# Copiar o script para o contêiner
-COPY mascarar-dados.py /app/mascarar-dados.py
-
-# Definir o diretório de trabalho
-WORKDIR /app
-
-# Comando padrão para executar o script
-CMD ["python", "mascarar-dados.py"]
+s3_client.download_file(bucket_name, file_name, output_file_name)
 ```
 
-![Evidencia4](../Evidências/Desafio/Sprint%204%20-%20Desafio%20Evidencias%20(4).png)
+---
 
-### **Conteúdo do mascarar-dados.py**
+### 2. Processamento dos Dados
+
+Os dados foram carregados no formato `.csv` e processados utilizando a biblioteca `pandas` para atender às exigências do desafio.
+
+#### **2.1. Operações Realizadas**
+
+1. **Filtragem com Dois Operadores Lógicos:**
+   - Filtrar dados onde `Chegadas > 0` e `ano == 2023`.
+
+2. **Funções de Agregação:**
+   - Soma e média da coluna `Chegadas`.
+
+3. **Função Condicional:**
+   - Criada a coluna `Categoria Chegadas` para categorizar dados como `Muitas` ou `Poucas`.
+
+4. **Função de Conversão:**
+   - Convertida a coluna `Chegadas` para string.
+
+5. **Função de Data:**
+   - Criada a coluna `ano_mes` combinando ano e mês.
+
+6. **Função de String:**
+   - Coluna `UF` convertida para letras minúsculas.
+
+#### **2.2. Consolidação dos Resultados**
+
+- Todas as operações foram consolidadas em um único DataFrame.
+- Salvo em um arquivo CSV: `resultados_aggregados.csv`.
+
+![Evidencia3](../Evidências/Desafio/Evidencia%20Desafio%20SP5%20(3).png)
+
+---
+
+### 4. Upload do Arquivo Processado
+
+O arquivo processado foi enviado de volta para o bucket S3:
+
 ```python
-import hashlib
-
-while True:
-    user_input = input("Digite uma string para mascarar (ou 'sair' para encerrar): ")
-    if user_input.lower() == "sair":
-        print("Encerrando...")
-        break
-    sha1_hash = hashlib.sha1(user_input.encode()).hexdigest()
-    print(f"Hash SHA-1: {sha1_hash}")
+s3_client.put_object(Bucket=bucket_name, Key="resultados_aggregados.csv", Body=output.getvalue())
 ```
 
-![Evidencia5](../Evidências/Desafio/Sprint%204%20-%20Desafio%20Evidencias%20(2).png)
+![Evidencia4](../Evidências/Desafio/Evidencia%20Desafio%20SP5%20(4).png)
 
 ---
 
-### **Comandos para execução**
+## Resultados Obtidos
 
-1. **Construir a imagem Docker**:
-   ```bash
-   docker build -t mascarar-dados -f Dockerfile .
-   ```
+- Arquivo processado disponível no bucket S3:
+  - **Nome do arquivo:** `resultados_aggregados.csv`.
+- As operações de filtragem, agregação, conversão, e manipulação foram realizadas com sucesso e os resultados consolidados no arquivo gerado.
 
-2. **Executar o contêiner** (permitir entrada de dados interativamente):
-   ```bash
-   docker run -it mascarar-dados
-   ```
-
-![Evidencia6](../Evidências/Desafio/Sprint4-Desafio%20(3).png)
 ---
 
-## **Comandos úteis para Docker**
+## Scripts Utilizados
 
-| **Comando**                    | **Descrição**                                      |
-|-------------------------------|---------------------------------------------------|
-| `docker build -t image-name .` | Cria a imagem Docker no diretório atual            |
-| `docker run image-name`         | Executa o contêiner de uma imagem Docker           |
-| `docker ps`                    | Lista os contêineres em execução                   |
-| `docker ps -a`                 | Lista todos os contêineres (ativos e parados)      |
-| `docker stop <container_id>`   | Para um contêiner ativo                            |
-| `docker rm <container_id>`     | Remove um contêiner parado                         |
-| `docker images`                | Lista todas as imagens Docker no sistema          |
-| `docker rmi <image_id>`        | Remove uma imagem Docker                           |
+### **upload_to_s3.py**
+
+Script para upload inicial do arquivo `chegadas_2023.csv` para o bucket S3.
+
+### **process_data_3.py**
+
+Script para download, processamento, e reupload do arquivo processado para o bucket S3.
+
+---
+
+## Conclusão
+
+Este desafio permitiu aplicar práticas de manipulação de dados e uso de serviços AWS, consolidando o conhecimento em análise de dados e automação com Python.

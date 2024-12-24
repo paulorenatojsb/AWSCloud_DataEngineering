@@ -22,48 +22,52 @@ try:
 
     # Carregar o arquivo CSV com a codificação correta
     print("Carregando o arquivo CSV...")
-    df = pd.read_csv(output_file_name, encoding='latin1', sep=';')  # Substitua ',' pelo delimitador correto
+    df = pd.read_csv(output_file_name, encoding='latin1', sep=';')
+
+    # Preparar DataFrame para armazenar os resultados
+    resultados = []
 
     # 4.1 Filtrar com dois operadores lógicos
     filtered_df = df[(df['Chegadas'] > 0) & (df['ano'] == 2023)]
-    print("\nFiltragem com dois operadores lógicos:")
-    print(filtered_df.head())
+    resultados.append({"Operação": "Filtragem", "Resultado": filtered_df.head().to_dict()})
 
     # 4.2 Funções de agregação
-    aggregation_result = df['Chegadas'].agg(['sum', 'mean'])
-    print("\nResultados de agregação:")
-    print(aggregation_result)
+    aggregation_result = df['Chegadas'].agg(['sum', 'mean']).to_dict()
+    resultados.append({"Operação": "Agregação", "Resultado": aggregation_result})
 
     # 4.3 Função condicional
     df['Categoria Chegadas'] = df['Chegadas'].apply(lambda x: 'Muitas' if x > 100 else 'Poucas')
-    print("\nColuna condicional adicionada:")
-    print(df[['Chegadas', 'Categoria Chegadas']].head())
+    condicional_result = df[['Chegadas', 'Categoria Chegadas']].head().to_dict()
+    resultados.append({"Operação": "Condicional", "Resultado": condicional_result})
 
     # 4.4 Função de conversão
     df['Chegadas_str'] = df['Chegadas'].astype(str)
-    print("\nColuna convertida para string:")
-    print(df[['Chegadas_str']].head())
+    conversao_result = df[['Chegadas_str']].head().to_dict()
+    resultados.append({"Operação": "Conversão", "Resultado": conversao_result})
 
     # 4.5 Função de data
     df['ano_mes'] = df['ano'].astype(str) + '-' + df['cod mes'].astype(str)
-    print("\nColuna de ano e mês combinados:")
-    print(df[['ano', 'cod mes', 'ano_mes']].head())
+    data_result = df[['ano', 'cod mes', 'ano_mes']].head().to_dict()
+    resultados.append({"Operação": "Data", "Resultado": data_result})
 
     # 4.6 Função de string
     df['UF_minúscula'] = df['UF'].str.lower()
-    print("\nColuna 'UF' modificada para minúsculas:")
-    print(df[['UF', 'UF_minúscula']].head())
+    string_result = df[['UF', 'UF_minúscula']].head().to_dict()
+    resultados.append({"Operação": "String", "Resultado": string_result})
 
-    # Salvar o DataFrame processado em S3
+    # Converter os resultados em um DataFrame
+    resultados_df = pd.DataFrame(resultados)
+
+    # Salvar o DataFrame de resultados em CSV
     output = StringIO()
-    df.to_csv(output, index=False, sep=';')
+    resultados_df.to_csv(output, index=False, sep=';')
     output.seek(0)
 
-    print("Salvando arquivo processado no S3...")
-    s3_client.put_object(Bucket=bucket_name, Key="chegadas_2023_processado.csv", Body=output.getvalue())
-    print(f"\nArquivo processado salvo no bucket '{bucket_name}' como 'chegadas_2023_processado.csv'.")
+    print("Salvando arquivo de resultados no S3...")
+    s3_client.put_object(Bucket=bucket_name, Key="resultados_aggregados.csv", Body=output.getvalue())
+    print(f"\nArquivo de resultados salvo no bucket '{bucket_name}' como 'resultados_aggregados.csv'.")
 
 except UnicodeDecodeError as ude:
-    print(f"Erro de codificação: {ude}. Verifique a codificação do arquivo ou altere o 'encoding' para outro valor (e.g., 'latin1').")
+    print(f"Erro de codificação: {ude}. Verifique a codificação do arquivo ou altere o 'encoding' para outro valor (e.g., 'utf-8').")
 except Exception as e:
     print(f"Ocorreu um erro: {e}")
