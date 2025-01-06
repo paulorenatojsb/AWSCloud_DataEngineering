@@ -17,7 +17,7 @@ Estou muito feliz por fazer parte deste programa e espero contribuir e aprender 
 3. [Sprint 3](./Sprint%2003/README.md) - **Python**
 4. [Sprint 4](./Sprint%2004/README.md) - **Docker**
 5. [Sprint 5](./Sprint%2005/README.md) - **AWS Certification**
-6. [Sprint 6] - Em breve!
+6. [Sprint 6](./Sprint%2006/README.md) - **AWS Certification**
 7. [Sprint 7] - Em breve!
 8. [Sprint 8] - Em breve!
 9. [Sprint 9] - Em breve!
