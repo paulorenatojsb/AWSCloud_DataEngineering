@@ -36,7 +36,7 @@ As etapas principais são:
   
 4. **Consumo de dados**: Criar dashboards analíticos para responder às perguntas de análise definidas.
 
-### Questões para Análise e Criação de Dashboard
+## Questões para Análise e Criação de Dashboard
 
 O tema para o desafio final da minha Squad ficou definido como **Filmes e Séries de Crime/Guerra**, e após análise exploratória, minhas perguntas são questão serão:
 
