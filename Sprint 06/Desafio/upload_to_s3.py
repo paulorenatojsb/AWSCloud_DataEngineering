@@ -10,7 +10,7 @@ region_name = 'us-east-1'
 bucket_name = 'data-lake-paulorenato'
 
 # Diretório com os arquivos CSV
-local_dir = "/app/data/filmes_series"
+local_dir = "C:/Users/Administrador/CompassAcademy/Sprint 06/filmes_series"
 
 # Inicializa o cliente S3
 s3_client = boto3.client('s3',
