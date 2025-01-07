@@ -63,7 +63,7 @@ Nesta etapa, a ingestão de dados foi feita utilizando um processo **Batch**, on
 1. **Desenvolver o código Python**:
    - Utilizar a biblioteca `boto3` para carregar os dados para a AWS S3.
 
-![Evidencia1](../Evidências/Evidencias%20Desafio%20-%20Sprint%206%20(4).png)
+![Evidencia1](../Evidências/Evidencia%20Desafio%20-%20Sprint%206%20up%20(3).png)
 
 2. **Estrutura de Armazenamento no S3**:
    - A estrutura de gravação no S3 seguiu o padrão:
@@ -78,6 +78,10 @@ Nesta etapa, a ingestão de dados foi feita utilizando um processo **Batch**, on
 
 ![Evidencia3](../Evidências/Evidencias%20Desafio%20-%20Sprint%206%20(1).png)
 
+![Evidencia5](../Evidências/Evidencia%20Desafio%20-%20Sprint%206%20up%20(1).png)
+
+![Evidencia6](../Evidências/Evidencia%20Desafio%20-%20Sprint%206%20up%20(2).png)
+
 3. **Criar um container Docker**:
    - O código Python foi executado dentro de um container Docker.
    - Criei um volume para armazenar os arquivos CSV localmente e vincular esse volume ao Docker para execução do processo.
@@ -87,6 +91,6 @@ Nesta etapa, a ingestão de dados foi feita utilizando um processo **Batch**, on
 4. **Execução local do Docker**:
    - Executei o container Docker localmente para realizar a carga dos dados no bucket S3.
 
-![Evidencia4](../Evidências/Evidencias%20Desafio%20-%20Sprint%206%20(3).png)
+![Evidencia4](../Evidências/Evidencia%20Desafio%20-%20Sprint%206%20up.png)
 
 A entrega da etapa 1 consistiu na implementação do código Python, a configuração do Docker para o ambiente de execução e a realização da ingestão dos dados para o S3.
