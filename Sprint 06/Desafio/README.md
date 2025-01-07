@@ -1,4 +1,4 @@
-# Desafio de Filmes e Séries - Data Lake
+# README DESAFIO SPRINT 6 - Desafio de Filmes e Séries - Data Lake
 
 ## 1. Objetivo
 

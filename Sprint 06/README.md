@@ -1,4 +1,4 @@
-# README DESAFIO SPRINT 6 - AWS Certification
+# README SPRINT 6 - AWS Certification
 
 Este documento descreve as atividades realizadas durante a Sprint 6, com foco no aprendizado e na prática de conceitos relacionados à S3 da Amazon Web Services (AWS), com utilização dos recursos Athena e Lambda.
 
