@@ -14,9 +14,9 @@ local_dir = '/app'
 
 # Inicializa o cliente S3
 s3_client = boto3.client('s3',
-                         aws_access_key_id='ASIAXEVXYO4ZMRTBIXNX',
-                         aws_secret_access_key='e4wAhRteGen7hhtk6nlXBViNfKuz32LQm+F3hFPr',
-                         aws_session_token='IQoJb3JpZ2luX2VjEHgaCXVzLWVhc3QtMSJGMEQCIGY9mTXRQrQQeuEuV0fJDP12oidtd1eGH0BiWumyKy+XAiB51NpEdO0w5OA/koYHNe8/mHRlucRrD8BekGsolHa3HSqbAwhhEAAaDDQ5MTA4NTM5NTc2MiIMnZCpoDSLwgmtZQFoKvgCAeL+u442SqPwxb2lXN7bNDM19RkR2PmUWpQemc0F8RKLWYIZBF6g7+cpujNJKZjtWh3cPBtNPGjaD7VS+AYBikM2wXftJ45IFW/SyFz7lmh952XkBacu5sE3SgDHZ6zIWyf9dskQoS8pL63TAHC4Ten4du6m5ZphgRiKk/SWRtrUcIuBqOuSCEeyPIrhRkj5gWukS4qz7cNVF3sYDsc/6erZxpM7AQLlXCHmSU4p4RE5RNgJ0UYiGE9dSpAVQ2rn1iRAIjvUtfui0Fy7EsYyY/AkEWf10Jns1N1dWy2dHSizcdxCoVs/rr/6zu8BCctdx5HUb9UOyrmQznn0TV7/ALeeLB5rVQIMdf4cW2LqCBYyuOyIfpyeEJ6f04vC8clmbMXJsE3DdzISmngUG2P05aIctO0ywHdVkc9+omSvhzBI72Oopb7+cKW02pCIjckaK39erUiIQ3JWn/necMdsbpeS/HXuO2Ms/hMHkqnZbRyh2usJal/4oDDxlPW7BjqnAXhVV9hukAJEhgZabredC2sA4mfurJTzr3zYEn0wI0o5Ksb4fPf4U1cBRsYl2bwWtIM4eXufbxEn4i+M/SfjpX7kvnMbEjnFkUapk7p1YCVkqnM75twaJQittx6P/GhSopgy4JCT/e34r0GeVQN3ghTmDcQznPCHj4tEeqGZ4kv545McVcV2gKuZTyJIc1y05d5QxMxKonf7xjxrPPKcPPWWPChN1xeB',
+                         aws_access_key_id='INSIRA SUA CHAVE DE ACESSO',
+                         aws_secret_access_key='INSIRA SUA CHAVE DE ACESSO SECRETA',
+                         aws_session_token='INSIRA SEU TOKEN DE SESSÃO',
                          region_name='us-east-1')
 
 # Data atual para estrutura de pastas
