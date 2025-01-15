@@ -27,8 +27,8 @@ Explorar e praticar as capacidades dos serviços AWS, incluindo:
 
 - Realização do Simulado da Prova de Certificação AWS:
 
-![simulado1](../Sprint%2005/Evidências/Exercícios/Evidencia%20Exercicio%20SP5%20(1).png)
-![simulado2](../Sprint%2005/Evidências/Exercícios/Evidencia%20Exercicio%20SP5%20(2).png)
+![simulado1](../Sprint%2005/Exercícios/Evidencia%20Exercicio%20SP5%20(1).png)
+![simulado2](../Sprint%2005/Exercícios/Evidencia%20Exercicio%20SP5%20(2).png)
 
 ### 2. **AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner**
 
@@ -63,7 +63,7 @@ Explorar as capacidades do serviço **AWS S3**, configurando um bucket para atua
 6. Opcionalmente, configure um documento de erro como `404.html`.
 7. Clique em **Save changes**.
 
-![Evidencia-1](../Sprint%2005/Evidências/Exercícios/Evidencia%20Exercicio%20SP5%20(3).png)
+![Evidencia-1](../Sprint%2005/Exercícios/Evidencia%20Exercicio%20SP5%20(3).png)
 
 ### Etapa 3: Editar as configurações do Bloqueio de Acesso Público
 
@@ -73,7 +73,7 @@ Explorar as capacidades do serviço **AWS S3**, configurando um bucket para atua
 4. Desmarque a opção **Block all public access**.
 5. Confirme a desativação e clique em **Save changes**.
 
-![Evidencia-2](../Sprint%2005/Evidências/Exercícios/Evidencia%20Exercicio%20SP5%20(6).png)
+![Evidencia-2](../Sprint%2005/Exercícios/Evidencia%20Exercicio%20SP5%20(6).png)
 
 ### Etapa 4: Adicionar política de bucket
 
@@ -101,7 +101,7 @@ Explorar as capacidades do serviço **AWS S3**, configurando um bucket para atua
 
 3. Clique em **Save changes**.
 
-![Evidencia-2](../Sprint%2005/Evidências/Exercícios/Evidencia%20Exercicio%20SP5%20(4).png)
+![Evidencia-2](../Sprint%2005/Exercícios/Evidencia%20Exercicio%20SP5%20(4).png)
 
 ### Etapa 5: Configurar um documento de índice
 
@@ -122,7 +122,7 @@ Explorar as capacidades do serviço **AWS S3**, configurando um bucket para atua
 
 2. No console S3, faça upload do `index.html` para o bucket.
 
-![Evidencia-4](../Sprint%2005/Evidências/Exercícios/Evidencia%20Exercicio%20SP5%20(5).png)
+![Evidencia-4](../Sprint%2005/Exercícios/Evidencia%20Exercicio%20SP5%20(5).png)
 
 ### Etapa 6: Configurar documento de erros
 
@@ -150,7 +150,7 @@ Explorar as capacidades do serviço **AWS S3**, configurando um bucket para atua
 
 Seguindo estes passos o site está disponível publicamente no endpoint.
 
-![Evidencia-5](../Sprint%2005/Evidências/Exercícios/Evidencia%20Exercicio%20SP5%20(7).png)
+![Evidencia-5](../Sprint%2005/Exercícios/Evidencia%20Exercicio%20SP5%20(7).png)
 
 ### 4. **Desafio da Sprint 05 (resumo)**
 

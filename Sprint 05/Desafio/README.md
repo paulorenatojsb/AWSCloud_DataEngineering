@@ -23,14 +23,14 @@ Realizei a criação do Bucket diretamente via console AWS.
 - Nome do bucket: `desafio-compass`.
 - Região: `us-east-1`.
 
-![Evidencia1](../Evidências/Desafio/Evidencia%20Desafio%20SP5%20(2).png)
+![Evidencia1](../Evidências/Evidencia%20Desafio%20SP5%20(2).png)
 
 #### **1.2. Upload do Arquivo Original**
 
 - Arquivo enviado: `chegadas_2023.csv`.
 - Ferramenta: Script Python utilizando `boto3`.
 
-![Evidencia2](../Evidências/Desafio/Evidencia%20Desafio%20SP5.png)
+![Evidencia2](../Evidências/Evidencia%20Desafio%20SP5.png)
 
 #### **1.3. Download do Arquivo**
 
@@ -71,7 +71,7 @@ Os dados foram carregados no formato `.csv` e processados utilizando a bibliotec
 - Todas as operações foram consolidadas em um único DataFrame.
 - Salvo em um arquivo CSV: `resultados_aggregados.csv`.
 
-![Evidencia3](../Evidências/Desafio/Evidencia%20Desafio%20SP5%20(3).png)
+![Evidencia3](../Evidências/Evidencia%20Desafio%20SP5%20(3).png)
 
 ---
 
@@ -83,7 +83,7 @@ O arquivo processado foi enviado de volta para o bucket S3:
 s3_client.put_object(Bucket=bucket_name, Key="resultados_aggregados.csv", Body=output.getvalue())
 ```
 
-![Evidencia4](../Evidências/Desafio/Evidencia%20Desafio%20SP5%20(4).png)
+![Evidencia4](../Evidências/Evidencia%20Desafio%20SP5%20(4).png)
 
 ---
 
