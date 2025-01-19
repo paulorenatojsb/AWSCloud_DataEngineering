@@ -1,20 +1,20 @@
-from pyspark import SparkContext
+from pyspark.sql import SparkSession
 
-# Inicialize o SparkContext
-sc = SparkContext("local", "WordCount")
+# Inicializa a sessão do Spark
+spark = SparkSession.builder.appName("Contador").getOrCreate()
 
-# Leia o arquivo README.md como RDD
-rdd = sc.textFile("README.md")
+# Exemplo de dados
+data = [("a", 1), ("b", 1), ("a", 1), ("c", 1), ("b", 1)]
+columns = ["letra", "valor"]
 
-# Divida as linhas em palavras
-words = rdd.flatMap(lambda line: line.split())
+# Criação de um DataFrame
+df = spark.createDataFrame(data, schema=columns)
 
-# Mapeie as palavras para pares (palavra, 1)
-word_pairs = words.map(lambda word: (word, 1))
+# Contagem de ocorrências
+resultado = df.groupBy("letra").count()
 
-# Reduza os pares somando as ocorrências
-word_counts = word_pairs.reduceByKey(lambda a, b: a + b)
+# Salva o resultado no arquivo especificado
+output_path = r"C:\Users\Administrador\.vscode\CompassAcademy-1\CompassAcademy\Sprint 07\Exercícios\5. Apache Spark - Contador\output.txt"
+resultado.write.csv(output_path, header=True)
 
-# Colete o resultado e exiba
-for word, count in word_counts.collect():
-    print(f"{word}: {count}")
+print(f"Resultado salvo em: {output_path}")
