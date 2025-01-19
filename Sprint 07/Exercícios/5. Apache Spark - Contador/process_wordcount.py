@@ -1,20 +1,13 @@
-from pyspark.sql import SparkSession
+from pyspark.sql.functions import explode, split, lower, trim, col
 
-# Inicializa a sessão do Spark
-spark = SparkSession.builder.appName("Contador").getOrCreate()
+# Leia o arquivo README.md
+df = spark.read.text("README.md")
 
-# Exemplo de dados
-data = [("a", 1), ("b", 1), ("a", 1), ("c", 1), ("b", 1)]
-columns = ["letra", "valor"]
+# Divida o texto em palavras, converta para minúsculas e remova espaços em branco
+words_df = df.select(explode(split(lower(trim(col("value"))), "\\s+")).alias("word"))
 
-# Criação de um DataFrame
-df = spark.createDataFrame(data, schema=columns)
+# Conte as ocorrências de cada palavra
+word_counts = words_df.groupBy("word").count().orderBy("count", ascending=False)
 
-# Contagem de ocorrências
-resultado = df.groupBy("letra").count()
-
-# Salva o resultado no arquivo especificado
-output_path = r"C:\Users\Administrador\.vscode\CompassAcademy-1\CompassAcademy\Sprint 07\Exercícios\5. Apache Spark - Contador\output.txt"
-resultado.write.csv(output_path, header=True)
-
-print(f"Resultado salvo em: {output_path}")
+# Mostre os resultados
+word_counts.show()
