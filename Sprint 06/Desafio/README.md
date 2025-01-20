@@ -50,7 +50,7 @@ O tema para o desafio final da minha Squad ficou definido como **Filmes e Série
 
 ### Análise Diagnóstica
 1. Como a escolha do elenco afeta o desempenho de filmes de Crime e Guerra?
-1. Qual é o impacto do tempo de duração (tempoMinutos) na notaMedia de filmes de Crime e Guerra?
+2. Qual é o impacto do tempo de duração (tempoMinutos) na notaMedia de filmes de Crime e Guerra?
 
 ## 4.1. Entrega 1
 
