@@ -3,7 +3,7 @@ import requests
 import boto3
 from datetime import datetime
 
-# >>> CREDENCIAIS DESEJADAS (mas cuidado com exposição)
+# >>> CREDENCIAIS
 AWS_ACCESS_KEY_ID = "INSIRA SUA CHAVE DE ACESSO"
 AWS_SECRET_ACCESS_KEY = "INSIRA SUA CHAVE DE ACESSO SECRETA"
 AWS_SESSION_TOKEN = "INSIRA SEU TOKEN DE SESSÃO"
