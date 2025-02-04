@@ -123,12 +123,6 @@ Neste repositório, você encontrará scripts em **PySpark** para praticar manip
    ```bash
    pip install pyspark
    ```
-3. **Configuração do Python**:  
-   - Se ocorrer erro de “Cannot run program python.exe” no Windows, crie o arquivo `spark-env.cmd` em `...\pyspark\conf` com o conteúdo:
-     ```
-     set PYSPARK_PYTHON=<caminho_completo_python.exe>
-     ```
-   - Referência: [StackOverflow: PySpark Windows Setup](https://stackoverflow.com/questions/45498049/encountered-a-error-that-cant-run-program-on-pyspark)
 
 ### 3.3 Etapas
 #### 3.3.1 Etapa 1
