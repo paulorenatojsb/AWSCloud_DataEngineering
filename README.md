@@ -19,6 +19,6 @@ Estou muito feliz por fazer parte deste programa e espero contribuir e aprender 
 5. [Sprint 5](./Sprint%2005/README.md) - **AWS Certification**
 6. [Sprint 6](./Sprint%2006/README.md) - **AWS Certification**
 7. [Sprint 7](./Sprint%2007/README.md) - **Pyspark, TMDB e AWS Glue**
-8. [Sprint 8](./Sprint%2008/README.md) - 
+8. [Sprint 8](./Sprint%2008/README.md) - **Apache, PySpark Trilha AWS**
 9. [Sprint 9] - Em breve!
 10. [Sprint 10] - Em breve!
