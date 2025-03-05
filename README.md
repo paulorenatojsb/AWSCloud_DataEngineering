@@ -21,4 +21,4 @@ Estou muito feliz por fazer parte deste programa e espero contribuir e aprender 
 7. [Sprint 7](./Sprint%2007/README.md) - **Pyspark, TMDB e AWS Glue**
 8. [Sprint 8](./Sprint%2008/README.md) - **Apache, PySpark Trilha AWS**
 9. [Sprint 9](./Sprint%2009/README.md) - **Modelagem Dimensional, PySpark e AWS Glue**
-10. [Sprint 10] - Em breve!
+10. [Sprint 10](./Sprint%2010/README.md) - **AWS Quicksight - Entrega Final**
