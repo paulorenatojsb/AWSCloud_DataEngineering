@@ -21,7 +21,7 @@ O Data Lake deste desafio segue as seguintes camadas:
 - **Trusted:** Dados processados e validados.
 - **Refined:** Tabelas refinadas com modelo dimensional, organizadas para consumo analítico.
 
-![Evidencia4](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(3).png)
+![Evidencia4](../Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(3).png)
 
 ### Tabelas Refinadas Utilizadas
 
@@ -50,7 +50,7 @@ Neste projeto, utilizamos 4 tabelas refinadas:
 
 > **Nota:** As tabelas foram geradas a partir de um pipeline em Apache Spark no AWS Glue que ingeriu, processou e transformou os dados dos arquivos brutos e Trusted para a camada Refined.
 
-![Evidencia3](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(6).png)
+![Evidencia3](../Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(6).png)
 
 ## 4. Perguntas e Análises para o Dashboard
 
@@ -102,7 +102,7 @@ O dashboard respondeu as seguintes seis questões, focando apenas nos filmes dos
     'Outro'
   )
   ```
-![Evidencia1](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(8).png)
+![Evidencia1](../Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(8).png)
 
 - **Filtragem de Gêneros Crime/Guerra:**  
   Criei um campo calculado para identificar se um filme pertence a Crime ou Guerra, por exemplo:
@@ -135,7 +135,7 @@ O dashboard respondeu as seguintes seis questões, focando apenas nos filmes dos
 - **Visual 6 – Sazonalidade dos Lançamentos:**  
   Gráfico Pizza configurado com o `mes` (campo calculado com o nome do mês).
 
-![Evidencia2](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(7).png)
+![Evidencia2](../Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(7).png)
 
 ## 7. Considerações Finais
 
