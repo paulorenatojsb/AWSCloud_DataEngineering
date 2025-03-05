@@ -6,7 +6,7 @@ Este projeto é a última etapa do desafio para construção de um Data Lake par
 
 ## 2. Objetivo do Desafio
 
-O desafio está dividido em 5 entregas, e nesta entrega final, o foco foi:
+O desafio foi dividido em 5 entregas, e nesta entrega final, o foco foi:
 
 - **Consumo dos Dados:**  
   Após as etapas de ingestão, armazenamento e processamento dos dados (usando arquivos CSV e dados da API do TMDB), a última fase foi extrair insights e construir um dashboard analítico.
@@ -20,6 +20,8 @@ O Data Lake deste desafio segue as seguintes camadas:
 - **Raw:** Armazenamento dos arquivos originais (CSV e JSON da API do TMDB).
 - **Trusted:** Dados processados e validados.
 - **Refined:** Tabelas refinadas com modelo dimensional, organizadas para consumo analítico.
+
+![Evidencia4](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(3).png)
 
 ### Tabelas Refinadas Utilizadas
 
@@ -47,6 +49,8 @@ Neste projeto, utilizamos 4 tabelas refinadas:
   - `data` (date)
 
 > **Nota:** As tabelas foram geradas a partir de um pipeline em Apache Spark no AWS Glue que ingeriu, processou e transformou os dados dos arquivos brutos e Trusted para a camada Refined.
+
+![Evidencia3](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(6).png)
 
 ## 4. Perguntas e Análises para o Dashboard
 
@@ -98,6 +102,8 @@ O dashboard respondeu as seguintes seis questões, focando apenas nos filmes dos
     'Outro'
   )
   ```
+![Evidencia1](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(8).png)
+
 - **Filtragem de Gêneros Crime/Guerra:**  
   Criei um campo calculado para identificar se um filme pertence a Crime ou Guerra, por exemplo:
   ```sql
@@ -128,6 +134,8 @@ O dashboard respondeu as seguintes seis questões, focando apenas nos filmes dos
 
 - **Visual 6 – Sazonalidade dos Lançamentos:**  
   Gráfico Pizza configurado com o `mes` (campo calculado com o nome do mês).
+
+![Evidencia2](../Sprint%2010/Evidências/Sprint%2010%20-%20Desafio%20-%20Evidências%20(7).png)
 
 ## 7. Considerações Finais
 
